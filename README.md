@@ -22,7 +22,7 @@ A practical, educational Python toolkit for discovering and understanding common
 ### 🛠 Quick Start
 
 ```bash
-git clone https://github.com/YOURUSERNAME/cybersec-adventures.git
+git clone https://github.com/Bananarama21/Reflex-v2-Web-Security-Toolkit/edit/main/README.md
 cd cybersec-adventures
 pip install -r requirements.txt
 python reflex.py --help
