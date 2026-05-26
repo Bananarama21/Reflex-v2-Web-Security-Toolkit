@@ -1,28 +1,27 @@
-# Reflex-v2-Web-Security-Toolkit
-A practical, educational Python toolkit for discovering and understanding common web vulnerabilities.
+# Reflex v2 — Web Security Toolkit 🛡️
 
 **Hey, I'm Euan Smith** 
 
-This repository is my public learning journey in web security, vulnerability research, and tooling. Heavily inspired by Google's Project Zero and open security culture.
+This repository contains my hands-on security tools. Inspired by Google's Project Zero and open security research, I'm building practical projects to deepen my understanding of web vulnerabilities.
 
 ---
 
-## 🚀 Main Project: Reflex v2 — Web Security Toolkit
+## 🚀 Reflex v2
 
-A practical, educational Python toolkit for discovering and understanding common web vulnerabilities.
+An educational Python toolkit for learning and testing common web security issues.
 
-### ✨ Features
-- **Reflected XSS, Open Redirect & Info Leak Scanner**
-- **DOM XSS Simulation** (interactive browser demo)
-- **Burp Suite Export Integration** (import and scan Burp JSON files)
-- **Smart Mini Fuzzer** (mutation + wordlist based)
-- Clean CLI + beautiful HTML reports
-- GitHub Actions CI for automated testing
+### ✨ Key Features
+- Reflected XSS, Open Redirect, and Information Leak detection
+- **Improved DOM XSS Simulation** (interactive and educational)
+- **Smart Mutation Fuzzer** with payload encoding
+- Basic Burp Suite JSON export support
+- Clean CLI with colored output + HTML reports
+- GitHub Actions CI/CD
 
 ### 🛠 Quick Start
 
 ```bash
-git clone git clone https://github.com/Bananarama21/Reflex-v2-Web-Security-Toolkit.git
-cd cybersec-adventures
+git clone https://github.com/Bananarama21/Reflex-v2-Web-Security-Toolkit.git
+cd Reflex-v2-Web-Security-Toolkit
 pip install -r requirements.txt
 python reflex.py --help
