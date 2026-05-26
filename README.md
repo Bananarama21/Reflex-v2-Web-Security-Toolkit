@@ -1,25 +1,33 @@
 # Reflex v2 — Web Security Toolkit 🛡️
 
-**Hey, I'm Euan Smith** — Recent HCETSS graduate (Class of 2025) and incoming BSc Cybersecurity & Digital Forensics student at Technological University Dublin (Blanchardstown) 
+**Hey, I'm Euan Smith** — Recent HCETSS graduate and incoming Cybersecurity student at TU Dublin.
 
-This repository showcases my hands-on learning journey in web security. I'm really inspired by Google's Project Zero and the open security work shared by the industry.
+This is my hands-on web security project. Inspired by Google's Project Zero.
 
----
-
-## 🚀 Reflex v2
-
-An educational Python toolkit for learning and testing common web vulnerabilities.
-
-### ✨ Features
-- Reflected XSS, Open Redirect & Information Leak Scanner
-- Interactive DOM XSS Simulation
-- Mutation-based Fuzzer
-- Colored CLI output + HTML reports
-- GitHub Actions for CI
-
-### 🛠 Quick Start
-
+### Quick Start
 ```bash
 git clone https://github.com/Bananarama21/Reflex-v2-Web-Security-Toolkit.git
 cd Reflex-v2-Web-Security-Toolkit
 pip install -r requirements.txt
+Example Commands
+Bashpython reflex.py --url https://testphp.vulnweb.com --scan all
+
+python reflex.py --url https://example.com/search --fuzz --param q
+
+python dom_xss_sim.py
+Euan Smith | Dublin
+text6. Scroll down and click **"Commit changes"**
+
+---
+
+### Step 2: Create requirements.txt
+
+1. On the main repo page, click **"Add file"** → **"Create new file"**
+2. In the file name box, type exactly: `requirements.txt`
+3. Copy and paste this:
+
+```txt
+requests>=2.32.0
+beautifulsoup4>=4.12.0
+colorama>=0.4.6
+pywebview>=5.0
