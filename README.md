@@ -25,3 +25,17 @@ git clone https://github.com/Bananarama21/Reflex-v2-Web-Security-Toolkit.git
 cd Reflex-v2-Web-Security-Toolkit
 pip install -r requirements.txt
 python reflex.py --help
+
+examples
+
+# Full scan
+python reflex.py --url https://testphp.vulnweb.com --scan all
+
+# Run fuzzer
+python reflex.py --url https://example.com/search --fuzz --param search
+
+# DOM XSS Simulator
+python dom_xss_sim.py
+
+# Scan from Burp export
+python reflex.py --burp burp_export.json
