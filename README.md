@@ -31,5 +31,3 @@ python reflex.py --url https://example.com/search --fuzz --param q
 
 # DOM XSS Simulator
 python dom_xss_sim.py
-
-LinkedIn: https://www.linkedin.com/in/euan-smith-4295123a6/
