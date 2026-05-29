@@ -101,3 +101,5 @@ if __name__ == "__main__":
         generate_report(findings, args.url)
     else:
         print(f"{Fore.GREEN}[+] Scan finished - no obvious issues found (educational tool)")
+
+hmm
