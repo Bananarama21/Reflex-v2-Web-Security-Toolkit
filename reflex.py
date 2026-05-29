@@ -102,4 +102,3 @@ if __name__ == "__main__":
     else:
         print(f"{Fore.GREEN}[+] Scan finished - no obvious issues found (educational tool)")
 
-hmm
