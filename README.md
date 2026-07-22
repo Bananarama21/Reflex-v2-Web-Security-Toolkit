@@ -1,33 +1,33 @@
-# Reflex v2 — Web Security Toolkit 🛡️
+# 🛡️ Reflex
 
-**Hey, I'm Euan Smith** — Recent HCETSS graduate (Class of 2025) and incoming BSc Cybersecurity & Digital Forensics student at Technological University Dublin (Blanchardstown).
+Educational Python toolkit for discovering and understanding common web vulnerabilities — reflected XSS, open redirects, DOM XSS, and mutation-based fuzzing — with colored terminal output and HTML reports.
 
-This repository shows hands-on learning in web security. Inspired by Google's Project Zero.
+**Ethical use only.** Built for learning and authorized testing (CTFs, your own test targets, permitted engagements). Do not point this at systems you don't have permission to test.
 
----
+## Features
 
-## 🚀 Reflex v2
+- Reflected XSS & open redirect scanner
+- DOM XSS simulation (safe demo target, no live exploitation)
+- Mutation-based fuzzer
+- Colored terminal output + HTML report generation
 
-An educational Python toolkit for learning common web vulnerabilities.
-
-### Features
-- Reflected XSS & Open Redirect Scanner
-- DOM XSS Simulation (safe demo)
-- Mutation Fuzzer
-- Colored output + HTML reports
-
-### Quick Start
+## Quick start
 
 ```bash
-git clone https://github.com/Bananarama21/Reflex-v2-Web-Security-Toolkit.git
-cd Reflex-v2-Web-Security-Toolkit
+git clone https://github.com/EuanSmith2/reflex.git
+cd reflex
 pip install -r requirements.txt
-Example Commands
-Bash# Full scan
+```
+
+## Usage
+
+```bash
+# Full scan
 python reflex.py --url https://testphp.vulnweb.com --scan all
 
 # With fuzzer
 python reflex.py --url https://example.com/search --fuzz --param q
 
-# DOM XSS Simulator
+# DOM XSS simulator
 python dom_xss_sim.py
+```
