@@ -1,17 +1,18 @@
-# 🛡️ Reflex
+# Reflex
 
-Educational Python toolkit for discovering and understanding common web vulnerabilities — reflected XSS, open redirects, DOM XSS, and mutation-based fuzzing — with colored terminal output and HTML reports.
+Small Python toolkit for poking at web apps for the classics: reflected XSS, open redirects, DOM XSS, and basic payload mutation for when the classics don't land first try.
 
-**Ethical use only.** Built for learning and authorized testing (CTFs, your own test targets, permitted engagements). Do not point this at systems you don't have permission to test.
+Built to actually learn how these vulnerabilities work, not just read about them. Point it at something you own or have permission to test — [testphp.vulnweb.com](http://testphp.vulnweb.com) is a good default if you don't have a target handy.
 
-## Features
+## What it does
 
-- Reflected XSS & open redirect scanner
-- DOM XSS simulation (safe demo target, no live exploitation)
-- Mutation-based fuzzer
-- Colored terminal output + HTML report generation
+- Scans for reflected XSS and open redirects
+- DOM XSS demo (safe, local, no live exploitation)
+- Basic mutation fuzzer for parameter values
+- Colour-coded terminal output
+- Dumps findings to an HTML report, so you're not squinting at scrollback
 
-## Quick start
+## Setup
 
 ```bash
 git clone https://github.com/EuanSmith2/reflex.git
@@ -22,12 +23,11 @@ pip install -r requirements.txt
 ## Usage
 
 ```bash
-# Full scan
 python reflex.py --url https://testphp.vulnweb.com --scan all
-
-# With fuzzer
 python reflex.py --url https://example.com/search --fuzz --param q
-
-# DOM XSS simulator
 python dom_xss_sim.py
 ```
+
+## Ethics, briefly
+
+Don't run this against anything you don't own or don't have written permission to test. Not a legal disclaimer — just how you stay out of trouble.
